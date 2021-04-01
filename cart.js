@@ -29,6 +29,11 @@ function quantityChanged(event){
 		input.value = 1;
 	}
 	updateCartTotal();
+
+	var addToCartButtons = document.getElementsByClassName("shop-item-button");
+		for (var i = 0; i < addToCartButtons.length; i++) {
+
+		}
 }
 
 function updateCartTotal(){

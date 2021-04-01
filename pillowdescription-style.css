@@ -170,3 +170,12 @@ img{
   float:center;
   margin-left:50em;
 }
+.price-pt{
+  text-align: center;
+  padding-right:10em;
+}
+.remove-button{
+  text-align:right;
+  margin-left:15em;
+  margin-top: 20px;
+}

@@ -1,9 +1,14 @@
 var removeCartItemButtons = document.getElementsByClassName("remove-button");
 console.log(removeCartItemButtons);
-for (var i = -1; i < removeCartItemButtons.length; i++) {
+for (var i = 0; i < removeCartItemButtons.length; i++) {
 	var button = removeCartItemButtons[i];
-	button.addEventListener("click", function() {
-		console.log('clicked')
+	button.addEventListener("click", function(event) {
+		var buttonClicked = event.target;
+		buttonClicked.parentElement.parentElement.remove();
+		updateCartTotal()
 	})
-
+}
+function updateCartTotal(){
+	var cartItemContainer = document.getElementsByClassName("cart-items")[0];
+	cartItemContainer.getElementsByClassName("cart-items")
 }

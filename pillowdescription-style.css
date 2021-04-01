@@ -139,9 +139,13 @@ img{
   margin-top:18em;
   margin-left:5em;
 }
-.cart-page{
-  width:80%;
+.pillow-image2{
+  width:12em;
+  height:10em;
+  margin-top:2em;
+  margin-left:-11em;
 }
+
 .details{
   text-align:left;
   padding-left:12em;
@@ -175,7 +179,7 @@ img{
   padding-right:10em;
 }
 .remove-button{
-  text-align:right;
+  text-align: right;
   margin-left:15em;
   margin-top: 20px;
 }

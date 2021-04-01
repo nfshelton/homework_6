@@ -116,39 +116,120 @@ nav li{
 img{ 
   border-radius: 6px;
   height: auto;
-  max-width: 70%;
+  max-width: 90%;
   border: 10px solid rgba(229, 192, 182, 1);
 }
-/* grid */
+/* grid row 1
+=========================*/
 .row {
   display: flex;
-  padding-left: 190px;
+  padding-left: 170px;
   position: relative;
   top:-34.6em;
+
 }
 .column {
   flex: 33.33%;
   padding: 5px;
+  padding-left:70px;
 }
 .column h2 {
-  background-color:rgba(119, 142, 147, 1);
-  padding-top: 20px;
-  padding-left:10px;
-  padding-right:10px;
-  top:10em;
+ /* background-color:rgba(119, 142, 147, 1); */
+  padding-top: 10px;
+  text-align: center;
+  padding-left:5px;
+  padding-right:5px;
+  top:15em;
+  text-shadow: .5px .5px rgba(0, 0, 0, 1);
+  color: rgba(119, 142, 147, 1);
 }
 .column button{
-  background-color: rgba(84, 87, 115, 1);
+  background-color: rgba(84, 87, 115, 1); 
   border-radius: 6px;
   color: white;
   display: inline-block;
-  position: absolute;
+  position: relative;
   float: right;
+  top: -1.8em;
+  padding-right:10px;
+
+}
+.column h1{
+  float: left;
+  position: relative;
+  padding-top:10px;
+  padding-left:50px;
+  padding-right:100px;
+  top: -1.85em;
+  color: rgba(119, 142, 147, 1);
+
+}
+.column p{
+  top: -1.3em;
+  position:relative;
+  color: rgba(119, 142, 147, 1);
+
 }
 
+/* grid row 1
+=========================*/
+.row2 {
+  display: flex;
+  padding-left: 170px;
+  position: relative;
+  top:-34.6em;
 
+}
+.column2 {
+  flex: 33.33%;
+  padding: 5px;
+  padding-left:70px;
+}
+.column2 button{
+  background-color: rgba(84, 87, 115, 1); 
+  border-radius: 6px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  float: right;
+  top: -2em;
+  padding-right:40px;
+}
 
+.column2 h2 {
+ /* background-color:rgba(119, 142, 147, 1); */
+  padding-top: 10px;
+  text-align: center;
+  padding-left:5px;
+  padding-right:5px;
+  top:15em;
+  text-shadow: .5px .5px rgba(0, 0, 0, 1);
+  color: rgba(119, 142, 147, 1);
+}
 
+.column2 h1{
+  float: left;
+  position: relative;
+  padding-top:10px;
+  padding-left:50px;
+  padding-right:100px;
+  top: -1.85em;
+  color: rgba(119, 142, 147, 1);
+}
+.column2 p{
+  top: -1.3em;
+  position: relative;
+  padding:-5px;
+  color: rgba(119, 142, 147, 1);
+}
+
+.morepages{
+  float:right;
+  padding-left:69em;
+  top: 70em;
+  position:absolute;
+
+}
 
 
 

@@ -22,26 +22,13 @@ function ready() {
 			button.addEventListener("click", addToCartClicked);
 			button2.addEventListener("click", addNotification);
 
-			//noti = noti +1;
 
 		}
 }
 var n = 0;
 function addNotification(event) {
-	//for (var i = 0; i < addToCartButtons.length; i++) {
-	//var noti = document.getElementsByClassName("dot");
 	n = n + 1;
-	console.log(n);
-	var noti = parseFloat(document.getElementsByClassName("dot")[0].innerText);
-	noti = n;
-	console.log(noti, n);
-
-	//var noti = document.getElementsByClassName("dot")[0].innerText;
-	//var total = 0
-	//for (var i = 0; i < noti.length; i++) {
-	//	total = total +1;
-	//	console.log("he")
-	
+	document.getElementsByClassName("dot")[0].innerText = n;
 }
 
 function removeCartItem(event) {

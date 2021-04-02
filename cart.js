@@ -15,12 +15,34 @@ function ready() {
 		input.addEventListener("change", quantityChanged)
 	}
 	var addToCartButtons = document.getElementsByClassName("shop-item-button");
+		var noti = parseFloat(document.getElementsByClassName("dot")[0].innerText);
 		for (var i = 0; i < addToCartButtons.length; i++) {
 			var button = addToCartButtons[i];
+			var button2 = addToCartButtons[i];
 			button.addEventListener("click", addToCartClicked);
+			button2.addEventListener("click", addNotification);
+
+			//noti = noti +1;
+
 		}
 }
+var n = 0;
+function addNotification(event) {
+	//for (var i = 0; i < addToCartButtons.length; i++) {
+	//var noti = document.getElementsByClassName("dot");
+	n = n + 1;
+	console.log(n);
+	var noti = parseFloat(document.getElementsByClassName("dot")[0].innerText);
+	noti = n;
+	console.log(noti, n);
 
+	//var noti = document.getElementsByClassName("dot")[0].innerText;
+	//var total = 0
+	//for (var i = 0; i < noti.length; i++) {
+	//	total = total +1;
+	//	console.log("he")
+	
+}
 
 function removeCartItem(event) {
 	var buttonClicked = event.target;
@@ -42,14 +64,13 @@ function addToCartClicked(event) {
 	var title = shopItem.getElementsByClassName("shop-item-title")[0].innerText;
 	var price = shopItem.getElementsByClassName("shop-item-price")[0].innerText;
 	var imageSrc = shopItem.getElementsByClassName("shop-item-image")[0].src;
-	console.log(title, price, imageSrc);
 	addItemToCart(title, price, imageSrc);
+
 }
 function addItemToCart(title, price, imageSrc) {
 	var cartRow = document.createElement('div');
 	cartRow.innerText = title;
 	var cartItems = document.getElementsByClassName("cart-items")[0];
-	cartItems.append(cartRow);
 }
 
 function updateCartTotal(){
